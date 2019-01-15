@@ -33,6 +33,7 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.Enabled = False
         Me.Button1.Location = New System.Drawing.Point(195, 90)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(66, 23)
@@ -78,6 +79,7 @@ Partial Class Form1
         'TextWithdraw
         '
         Me.TextWithdraw.Location = New System.Drawing.Point(128, 53)
+        Me.TextWithdraw.MaxLength = 12
         Me.TextWithdraw.Name = "TextWithdraw"
         Me.TextWithdraw.Size = New System.Drawing.Size(133, 20)
         Me.TextWithdraw.TabIndex = 5

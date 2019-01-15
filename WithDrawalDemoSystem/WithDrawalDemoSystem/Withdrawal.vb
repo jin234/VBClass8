@@ -1,6 +1,6 @@
 ﻿Public Class Withdrawal
-    Dim rng As Random = New Random
-    Private _Balance As Integer = rng.Next(1, 9) * 100000
+
+    Private _Balance As Integer
     Private _Withdrawal As Integer
 
     Public Property Balance As Integer
@@ -26,9 +26,9 @@
     End Sub
 
     Public Function GenNote()
-        Dim Note1000 As Integer = _Withdraw \ 1000
-        Dim Note500 As Integer = (_Withdraw Mod 1000) \ 500
-        Dim Note100 As Integer = ((_Withdraw Mod 1000) Mod 500) \ 100
+        Dim Note1000 As Integer = _Withdrawal \ 1000
+        Dim Note500 As Integer = (_Withdrawal Mod 1000) \ 500
+        Dim Note100 As Integer = ((_Withdrawal Mod 1000) Mod 500) \ 100
 
         Return "1000 : " & Note1000 & vbNewLine &
                "500 : " & Note500 & vbNewLine &
