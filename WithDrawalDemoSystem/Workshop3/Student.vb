@@ -7,6 +7,8 @@
     Private _Score_Mid As Integer
     Private _Score_Fin As Integer
 
+    Private _Test As String
+
     Public Property STU_ID As String
         Get
             Return _STU_ID

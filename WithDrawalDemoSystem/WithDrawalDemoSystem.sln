@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WithDrawalDemoSystem", "WithDrawalDemoSystem\WithDrawalDemoSystem.vbproj", "{6FF5E8DA-939C-4F47-98A2-6092CC664B90}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Workshop1", "WithDrawalDemoSystem\Workshop1.vbproj", "{6FF5E8DA-939C-4F47-98A2-6092CC664B90}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Workshop3", "Workshop3\Workshop3.vbproj", "{51458AE8-4880-4BF2-BADC-33C8AEE8C316}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Workshop2", "Week3 WS1\Workshop2.vbproj", "{45B8263C-3F1F-44B5-8397-A8CF7EE44879}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{51458AE8-4880-4BF2-BADC-33C8AEE8C316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51458AE8-4880-4BF2-BADC-33C8AEE8C316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51458AE8-4880-4BF2-BADC-33C8AEE8C316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B8263C-3F1F-44B5-8397-A8CF7EE44879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B8263C-3F1F-44B5-8397-A8CF7EE44879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B8263C-3F1F-44B5-8397-A8CF7EE44879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B8263C-3F1F-44B5-8397-A8CF7EE44879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

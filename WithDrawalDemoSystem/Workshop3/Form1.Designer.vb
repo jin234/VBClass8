@@ -54,15 +54,17 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(119, 12)
+        Me.TextBox1.MaxLength = 10
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(212, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(248, 20)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(119, 38)
+        Me.TextBox2.MaxLength = 100
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(212, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(248, 20)
         Me.TextBox2.TabIndex = 3
         '
         'Label2
@@ -78,6 +80,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(119, 64)
+        Me.TextBox3.MaxLength = 3
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(69, 20)
         Me.TextBox3.TabIndex = 5
@@ -94,6 +97,7 @@ Partial Class Form1
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(119, 90)
+        Me.TextBox4.MaxLength = 3
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(69, 20)
         Me.TextBox4.TabIndex = 7
@@ -110,6 +114,7 @@ Partial Class Form1
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(119, 116)
+        Me.TextBox5.MaxLength = 3
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(69, 20)
         Me.TextBox5.TabIndex = 9
@@ -126,6 +131,7 @@ Partial Class Form1
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(119, 142)
+        Me.TextBox6.MaxLength = 3
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(69, 20)
         Me.TextBox6.TabIndex = 11
@@ -144,7 +150,7 @@ Partial Class Form1
         Me.Button1.Enabled = False
         Me.Button1.Location = New System.Drawing.Point(12, 169)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(319, 54)
+        Me.Button1.Size = New System.Drawing.Size(355, 54)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "ส่งคะแนนสอบ"
         Me.Button1.UseVisualStyleBackColor = True
@@ -185,7 +191,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(353, 235)
+        Me.ClientSize = New System.Drawing.Size(379, 235)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
