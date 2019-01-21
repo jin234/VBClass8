@@ -9,7 +9,11 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        For Each i In TextBox1.Text
+            If Char.IsDigit(i) Or i <> "-" Then
 
+            End If
+        Next
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
@@ -17,7 +21,17 @@
     End Sub
 
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        If TextBox3.TextLength <> 0 Then
 
+            If CInt(TextBox3.Text) > 0 And CInt(TextBox3.Text) < 10 Then
+                Label7.Text = "คะแนนถูกต้อง"
+            Else
+                Label7.Text = "คะแนน ต้องอยู่ในช่วง 0 - 20 เท่านั้น"
+            End If
+
+        Else
+            Label7.Text = "กรุณากรอกคะแนนเป็นตัวเลขเท่านั้น"
+        End If
     End Sub
 
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
@@ -38,6 +52,5 @@
         Else
             Button1.Enabled = False
         End If
-
     End Sub
 End Class
