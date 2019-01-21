@@ -4,7 +4,16 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim student As Student = New Student
 
+        student.STU_ID = TextBox1.Text)
+        student.STU_NAME = TextBox2.Text)
+        student.Score_Prac = CInt(TextBox3.Text)
+        student.Score_Proj = CInt(TextBox4.Text)
+        student.Score_Mid = CInt(TextBox5.Text)
+        student.Score_Fin = CInt(TextBox6.Text)
+
+        MessageBox.Show("")
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
