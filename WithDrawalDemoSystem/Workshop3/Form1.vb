@@ -13,7 +13,8 @@
         student.Score_Mid = CInt(TextBox5.Text)
         student.Score_Fin = CInt(TextBox6.Text)
 
-        MessageBox.Show("")
+        MessageBox.Show("รหัสนักศึกษา: " & student.STU_ID & " (" & student.STU_NAME & ")" & vbNewLine &
+                        "คะแนนรวม " & student.Total_Score & " คะแนน" & "(ได้เกรด " & student.Find_Grade & ")")
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -107,11 +108,11 @@
 
         If TextBox6.TextLength <> 0 Then
 
-            If CInt(TextBox6.Text) >= 0 And CInt(TextBox6.Text) <= 30 Then
+            If CInt(TextBox6.Text) >= 0 And CInt(TextBox6.Text) <= 40 Then
                 Label10.Text = "คะแนนถูกต้อง"
                 Label10.ForeColor = Color.Green
             Else
-                Label10.Text = "คะแนนต้องอยู่ในช่วง 0 - 30 เท่านั้น"
+                Label10.Text = "คะแนนต้องอยู่ในช่วง 0 - 40 เท่านั้น"
                 Label10.ForeColor = Color.Red
             End If
 
