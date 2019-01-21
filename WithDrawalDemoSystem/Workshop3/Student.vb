@@ -24,7 +24,7 @@
             _STU_NAME = value
         End Set
     End Property
-
+    'ff'
     Public Property Score_Prac As Integer
         Get
             Return _Score_Prac
