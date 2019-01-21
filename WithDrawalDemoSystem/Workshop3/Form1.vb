@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-    Dim chck As Boolean = False
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -36,13 +35,11 @@
             Else
                 Label7.Text = "คะแนนต้องอยู่ในช่วง 0 - 10 เท่านั้น"
                 Label7.ForeColor = Color.Red
-                chck = False
             End If
 
         Else
             Label7.Text = ""
             Label7.ForeColor = Color.Black
-            chck = False
         End If
     End Sub
 
@@ -61,13 +58,11 @@
             Else
                 Label8.Text = "คะแนนต้องอยู่ในช่วง 0 - 20 เท่านั้น"
                 Label8.ForeColor = Color.Red
-                chck = False
             End If
 
         Else
             Label8.Text = ""
             Label8.ForeColor = Color.Black
-            chck = False
         End If
     End Sub
 
@@ -86,13 +81,11 @@
             Else
                 Label9.Text = "คะแนนต้องอยู่ในช่วง 0 - 30 เท่านั้น"
                 Label9.ForeColor = Color.Red
-                chck = False
             End If
 
         Else
             Label9.Text = ""
             Label9.ForeColor = Color.Black
-            chck = False
         End If
     End Sub
 
@@ -111,18 +104,16 @@
             Else
                 Label10.Text = "คะแนนต้องอยู่ในช่วง 0 - 30 เท่านั้น"
                 Label10.ForeColor = Color.Red
-                chck = False
             End If
 
         Else
             Label10.Text = ""
             Label10.ForeColor = Color.Black
-            chck = False
         End If
     End Sub
 
     Private Sub TextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles TextBox6.TextChanged, TextBox5.TextChanged, TextBox4.TextChanged, TextBox3.TextChanged, TextBox2.TextChanged, TextBox1.TextChanged
-        If TextBox1.TextLength > 0 And TextBox2.TextLength > 0 And TextBox3.TextLength > 0 And TextBox4.TextLength > 0 And TextBox5.TextLength > 0 And TextBox6.TextLength > 0 And chck = True Then
+        If TextBox1.TextLength > 0 And TextBox2.TextLength > 0 And Label7.ForeColor = Color.Green And Label8.ForeColor = Color.Green And Label9.ForeColor = Color.Green And Label10.ForeColor = Color.Green Then
             Button1.Enabled = True
         Else
             Button1.Enabled = False
