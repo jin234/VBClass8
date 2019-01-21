@@ -29,7 +29,7 @@
 
         If TextBox3.TextLength <> 0 Then
 
-            If CInt(TextBox3.Text) > 0 And CInt(TextBox3.Text) < 10 Then
+            If CInt(TextBox3.Text) >= 0 And CInt(TextBox3.Text) <= 10 Then
                 Label7.Text = "คะแนนถูกต้อง"
                 Label7.ForeColor = Color.Green
             Else
@@ -52,7 +52,7 @@
 
         If TextBox4.TextLength <> 0 Then
 
-            If CInt(TextBox4.Text) > 0 And CInt(TextBox4.Text) < 20 Then
+            If CInt(TextBox4.Text) >= 0 And CInt(TextBox4.Text) <= 20 Then
                 Label8.Text = "คะแนนถูกต้อง"
                 Label8.ForeColor = Color.Green
             Else
@@ -75,7 +75,7 @@
 
         If TextBox5.TextLength <> 0 Then
 
-            If CInt(TextBox5.Text) > 0 And CInt(TextBox5.Text) < 30 Then
+            If CInt(TextBox5.Text) >= 0 And CInt(TextBox5.Text) <= 30 Then
                 Label9.Text = "คะแนนถูกต้อง"
                 Label9.ForeColor = Color.Green
             Else
@@ -98,7 +98,7 @@
 
         If TextBox6.TextLength <> 0 Then
 
-            If CInt(TextBox6.Text) > 0 And CInt(TextBox6.Text) < 30 Then
+            If CInt(TextBox6.Text) >= 0 And CInt(TextBox6.Text) <= 30 Then
                 Label10.Text = "คะแนนถูกต้อง"
                 Label10.ForeColor = Color.Green
             Else
